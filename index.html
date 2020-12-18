@@ -1,13 +1,47 @@
----
-layout: presentation
----
+<!DOCTYPE html>
+<html lang="en">
 
-{% for post in site.posts reversed %}
-	{% include slide.html %}
-	<div class="page-break"></div>
-{% endfor %}
-{% unless site.simple-slideshow %}
-{% if site.overview %}
-<section id="overview" class="step" {% for attr in site.overview-data %} data-{{attr[0]}}="{{attr[1]}}"{% endfor %}></section>
-{% endif %}
-{% endunless %}
+<head>
+    <meta charset="UTF-8">
+    <title>Mesumbe's website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="text/css" href="pexels-ryutaro-tsukata-5220017.jpg">
+    <meta name="viewport" content="width =device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <section id="banner">
+        <div class="banner-text">
+            <h1 title="mesumbe">My Web page</h1>
+            <p>Welcome to the mesumbe's</p>
+            <div class="banner-btn">
+                <a href="#"><span></span>Find out</a>
+                <a href="#"><span></span>Read More</a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <div id="sideNav">
+        <nav>
+            <ul>
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="features.html">FEATURES</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="contacts.html">CONTACT</a></li>
+            </ul>
+        </nav>
+    </div>
+
+
+
+
+
+</body>
+
+</html>
